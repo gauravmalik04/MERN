@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Alignment</title>
+    <link rel="stylesheet" href="">
+    <style>
+        #parent-div{
+            /* border: 2px solid black; */
+            background-color: skyblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            gap: 10px;
+            padding: 10px;
+            width: 50%;
+            margin: auto;
+            /* gap: 3%; */
+        }
+        .child-div{
+            /* border: 1px solid red; */
+            width: 33%;
+            height: 60%;
+            padding: 10px;
+            overflow: hidden;
+            margin: auto;
+        }
+        img{
+            width: 100%;
+            height: 200px;
+        }
+        #div1{
+            background-color: lightcoral;
+            border-radius: 10px;
+        }
+        #div2{
+            background-color: lightcoral;
+            border-radius: 10px;
+        }
+        #div3{
+            background-color: lightcoral;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent-div">
+        <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" class="child-div" id="div1">
+            <img src="https://shorturl.at/Bs4o1" alt="">
+            <p>Fashion Tips</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, repudiandae?</p>
+            <a href="">Read more</a>
+        </div>
+        <div style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" id="div2" class="child-div">
+            <img src="https://shorturl.at/uSPYV" alt="">
+            <p>Space Tips</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, distinctio!</p>
+            <a href="">Read more</a>
+        </div>
+        <div style="font-family: Georgia, 'Times New Roman', Times, serif;" id="div3" class="child-div">
+            <img src="https://shorturl.at/sUvYa" alt="">
+            <p>Exploration Tips</p>
+            <p>Lorem ipsum dolor, sit amet. Esse ducimus, quia tempora vel necessitatibus et! Excepturi itaque cupiditate aliquid a.</p>
+            <a href="">Read more</a>
+        </div>
+    </div>
+</body>
+</html>
