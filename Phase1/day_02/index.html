@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color: green;
+        }
+        button{
+            width: 200px;
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM 1</h1>
+    <h3 id="welcome-text">Welcome to My Webpage</h3>
+    <button id="exit">Exit</button>
+</body>
+</html>
+
+<script>
+    console.log("Hello brother")
+    var btn = document.querySelector("#exit")
+    btn.addEventListener("click",eventButton)
+    var flag = false
+    function eventButton(){
+        // alert("Button is clocked.")
+        flag = !flag
+        if(flag){
+            var text = document.querySelector("#welcome-text")
+            text.innerText = "Thanks! Goodbye."
+            btn.innerText = "Welcome"
+            text.style.color = "red"
+        }else{
+            var text = document.querySelector("#welcome-text")
+            text.innerText = "Welcome To My Webpage"
+            btn.innerHTML="EXIT"
+            text.style.color="green"
+        }
+    }
+</script>
